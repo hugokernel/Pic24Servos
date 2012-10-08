@@ -1,0 +1,25 @@
+---------------------< ChangeLog Gestion de 24 servos >----------------------
+
+[VERSION 1.2.0]
+	- hugo
+		11 janvier 2006
+			* ADD: Nouveau mode (SERVO_MODE_CMD_MASK_3BLOCK) permettant à la réception d'une trame de 7 octets
+			  d'envoyer plusieurs consignes à plusieurs servos
+			* ADD: Création d'une macro permettant d'envoyer des caractères (par exemple au démarrage)
+			* A la mise sous tension, les servos sont tous à 0, on évite ainsi les servos qui forcent
+			* BUG: Lorsque l'on demande qu'un seul port à 0
+
+[VERSION 1.1.1]
+	- hugo
+		10 février 2005
+			* BUG: Modification dans le programme pour que la période soit toujours égale à 20ms (+/- 0,2ms)
+
+[VERSION 1.1]
+	- hugo
+		25 janvier 2005
+			* Lorsqu'une consigne 0 est envoyé, le port correspondant est mis à 0 et non à 1 comme précedemment
+			  Cela pouvait entrainer des parasites et mettre les servos dans des positions non souhaitées
+[VERSION 1.0]
+	- hugo
+		5 janvier 2005
+			* Première version
